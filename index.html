@@ -163,17 +163,17 @@
 
 
 
-  <meta name="description" content="php是最好的语言">
+  <meta name="description" content="胡经邦的博客">
 <meta name="keywords" content="博客">
 <meta property="og:type" content="website">
 <meta property="og:title" content="胡经邦的博客">
 <meta property="og:url" content="http://yoursite.com/index.html">
 <meta property="og:site_name" content="胡经邦的博客">
-<meta property="og:description" content="php是最好的语言">
+<meta property="og:description" content="胡经邦的博客">
 <meta property="og:locale" content="zh-CN">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="胡经邦的博客">
-<meta name="twitter:description" content="php是最好的语言">
+<meta name="twitter:description" content="胡经邦的博客">
 
 
 
@@ -356,11 +356,11 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/03/b站/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/03/hexo博客的搭建/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="胡经邦">
-      <meta itemprop="description" content="php是最好的语言">
+      <meta itemprop="description" content="胡经邦的博客">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -375,8 +375,8 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/2018/11/03/b站/" itemprop="url">
-                  python基础教程
+                <a class="post-title-link" href="/2018/11/03/hexo博客的搭建/" itemprop="url">
+                  hexo博客的搭建
                 </a>
               
             
@@ -402,7 +402,7 @@
                 
               
 
-              <time title="创建时间：2018-11-03 14:38:41 / 修改时间：15:06:01" itemprop="dateCreated datePublished" datetime="2018-11-03T14:38:41+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-03 16:43:06 / 修改时间：17:24:34" itemprop="dateCreated datePublished" datetime="2018-11-03T16:43:06+08:00">2018-11-03</time>
             
 
             
@@ -424,7 +424,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/bilibili/" itemprop="url" rel="index"><span itemprop="name">bilibili</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
 
                 
                 
@@ -460,7 +460,290 @@
       
         
           
+            <h1 id="什么是Hexo？"><a href="#什么是Hexo？" class="headerlink" title="什么是Hexo？"></a>什么是Hexo？</h1><blockquote>
+<p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+</blockquote>
+<h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><blockquote>
+<p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
+</blockquote>
+<p>1.Node.js<br>2.Git</p>
+<blockquote>
+<p>如果您电脑已经安装上述的必备程序，接下来只需要使用node自带的npm包管理工具可完成Hexo的安装。</p>
+</blockquote>
+<blockquote>
+<p>在window用户安装需要注意Git安装的时候，需要勾选Add to path选项。主要这个选项一勾选，安装的任何命令工具，直接默认安装到系统path路径（在我的电脑属性的环境变量里面），使用git Bash的工具进行安装，提供了Linux风格的shell，在该环境下，可以直接用来安装node.js。</p>
+</blockquote>
+<h2 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure>
+<h1 id="建站"><a href="#建站" class="headerlink" title="建站"></a>建站</h1><blockquote>
+<p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init &lt;folder&gt; # folder是文件目录名称</span><br><span class="line">$ cd &lt;folder&gt; # folder是文件目录名称</span><br><span class="line">$ npm install # 安装node依赖包</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>新建完成后，指定文件夹的目录如下：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">.</span><br><span class="line">├── _config.yml</span><br><span class="line">├── package.json</span><br><span class="line">├── scaffolds</span><br><span class="line">├── source</span><br><span class="line">|   ├── _drafts</span><br><span class="line">|   └── _posts</span><br><span class="line">└── themes</span><br></pre></td></tr></table></figure>
+<h2 id="config-yml"><a href="#config-yml" class="headerlink" title="_config.yml"></a>_config.yml</h2><blockquote>
+<p>网站的配置信息,您可以在此配置大部分的参数</p>
+</blockquote>
+<h2 id="package-json"><a href="#package-json" class="headerlink" title="package.json"></a>package.json</h2><blockquote>
+<p>应用程序的信息.</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  &quot;name&quot;: &quot;hexo-site&quot;,</span><br><span class="line">  &quot;version&quot;: &quot;0.0.0&quot;,</span><br><span class="line">  &quot;private&quot;: true,</span><br><span class="line">  &quot;hexo&quot;: &#123;</span><br><span class="line">    &quot;version&quot;: &quot;&quot;</span><br><span class="line">  &#125;,</span><br><span class="line">  &quot;dependencies&quot;: &#123;</span><br><span class="line">    &quot;hexo&quot;: &quot;^3.0.0&quot;,</span><br><span class="line">    &quot;hexo-generator-archive&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-category&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-index&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-generator-tag&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-ejs&quot;: &quot;^0.1.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-stylus&quot;: &quot;^0.2.0&quot;,</span><br><span class="line">    &quot;hexo-renderer-marked&quot;: &quot;^0.2.4&quot;,</span><br><span class="line">    &quot;hexo-server&quot;: &quot;^0.1.2&quot;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="scaffolds"><a href="#scaffolds" class="headerlink" title="scaffolds"></a>scaffolds</h2><blockquote>
+<p>模版 文件夹。当您新建文章时，Hexo 会根据 scaffold 来建立文件。</p>
+</blockquote>
+<blockquote>
+<p>Hexo的模板是指在新建的markdown文件中默认填充的内容。例如，如果您修改scaffold/post.md中的Front-matter内容，那么每次新建一篇文章时都会包含这个修改(hexo new [layout] title)</p>
+</blockquote>
+<h2 id="source"><a href="#source" class="headerlink" title="source"></a>source</h2><blockquote>
+<p>资源文件夹是存放用户资源的地方。除 _posts 文件夹之外，开头命名为 _ (下划线)的文件 / 文件夹和隐藏的文件将会被忽略。Markdown 和 HTML 文件会被解析并放到 public 文件夹，而其他文件会被拷贝过去。</p>
+</blockquote>
+<h2 id="themes"><a href="#themes" class="headerlink" title="themes"></a>themes</h2><blockquote>
+<p>主题 文件夹。Hexo 会根据主题来生成静态页面。</p>
+</blockquote>
+<h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><blockquote>
+<p>您可以在 _config.yml 中修改大部份的配置。</p>
+</blockquote>
+<h2 id="网站"><a href="#网站" class="headerlink" title="网站"></a>网站</h2><table>
+<thead>
+<tr>
+<th>参数</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>title</td>
+<td>网站标题</td>
+<td></td>
+</tr>
+<tr>
+<td>subtitle</td>
+<td>网站副标题</td>
+<td></td>
+</tr>
+<tr>
+<td>description</td>
+<td>网站描述</td>
+<td></td>
+</tr>
+<tr>
+<td>author</td>
+<td>您的名字</td>
+<td></td>
+</tr>
+<tr>
+<td>language</td>
+<td>网站使用的语言</td>
+<td></td>
+</tr>
+<tr>
+<td>timezone</td>
+<td>网站时区。Hexo 默认使用您电脑的时区。时区列表。比如说：America/New_York, Japan, 和 UTC 。</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>其中，description主要用于SEO，告诉搜索引擎一个关于您站点的简单描述，通常建议在其中包含您网站的关键词。author参数用于主题显示文章的作者。</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    
+
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/11/03/hexo/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="胡经邦">
+      <meta itemprop="description" content="胡经邦的博客">
+      <meta itemprop="image" content="/uploads/avatar.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="胡经邦的博客">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2018/11/03/hexo/" itemprop="url">
+                  hexo博客搭建可爱二次元Live2d模型
+                </a>
+              
             
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2018-11-03 15:51:23 / 修改时间：16:44:14" itemprop="dateCreated datePublished" datetime="2018-11-03T15:51:23+08:00">2018-11-03</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/hexo/" itemprop="url" rel="index"><span itemprop="name">hexo</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>我认识有个同学他搭建过博客，看他的博客有这种2D模型的特效，特别羡慕，然后我就自己去查阅资料，github里面找到这个教程。<br><strong>地址是:</strong><a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" target="_blank" rel="noopener">https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md</a></p>
+</blockquote>
+<h2 id="首先-安装npm模型包："><a href="#首先-安装npm模型包：" class="headerlink" title="首先,安装npm模型包："></a>首先,安装npm模型包：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-helper-live2d</span><br></pre></td></tr></table></figure>
+<h2 id="然后在hexo的配置文件-config-yml中添加如下配置，详细配置可以参考文档："><a href="#然后在hexo的配置文件-config-yml中添加如下配置，详细配置可以参考文档：" class="headerlink" title="然后在hexo的配置文件_config.yml中添加如下配置，详细配置可以参考文档："></a>然后在hexo的配置文件_config.yml中添加如下配置，详细配置可以参考文档：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">live2d:</span><br><span class="line">  enable: true</span><br><span class="line">  scriptFrom: local</span><br><span class="line">  pluginRootPath: live2dw/</span><br><span class="line">  pluginJsPath: lib/</span><br><span class="line">  pluginModelPath: assets/</span><br><span class="line">  tagMode: false</span><br><span class="line">  debug: false</span><br><span class="line">  model:</span><br><span class="line">    use: live2d-widget-model-shizuku</span><br><span class="line">  display:</span><br><span class="line">    position: right</span><br><span class="line">    width: 150</span><br><span class="line">    height: 300</span><br><span class="line">  mobile:</span><br><span class="line">    show: true</span><br></pre></td></tr></table></figure>
+<h2 id="安装的模型包的命令如下："><a href="#安装的模型包的命令如下：" class="headerlink" title="安装的模型包的命令如下："></a>安装的模型包的命令如下：</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install 模型名称</span><br></pre></td></tr></table></figure>
+<h2 id="模型名称列表："><a href="#模型名称列表：" class="headerlink" title="模型名称列表："></a>模型名称列表：</h2><ul>
+<li>live2d-widget-model-chitose</li>
+<li>live2d-widget-model-epsilon2_1</li>
+<li>live2d-widget-model-gf</li>
+<li>live2d-widget-model-haru/01（使用npm install –save live2d-widget-model-haru）</li>
+<li>live2d-widget-model-haru/02（使用npm install –save live2d-widget-model-haru）</li>
+<li>live2d-widget-model-haruto</li>
+<li>live2d-widget-model-hibiki</li>
+<li>live2d-widget-model-hijiki</li>
+<li>live2d-widget-model-izumi</li>
+<li>live2d-widget-model-koharu</li>
+<li>live2d-widget-model-miku</li>
+<li>live2d-widget-model-ni-j</li>
+<li>live2d-widget-model-nico</li>
+<li>live2d-widget-model-nietzsche</li>
+<li>live2d-widget-model-nipsilon</li>
+<li>live2d-widget-model-nito</li>
+<li>live2d-widget-model-shizuku</li>
+<li>live2d-widget-model-tororo</li>
+<li>live2d-widget-model-tsumiki</li>
+<li>live2d-widget-model-unitychan</li>
+<li>live2d-widget-model-wanko</li>
+<li>live2d-widget-model-z16</li>
+</ul>
+<blockquote>
+<p>模型包图片效果的预览地址：<a href="https://huaji8.top/post/live2d-plugin-2.0/" target="_blank" rel="noopener">https://huaji8.top/post/live2d-plugin-2.0/</a></p>
+</blockquote>
+<blockquote>
+<p>安装前面的所有步骤后,在你的博客目录下建立新文件夹live2d_models,然后在node_modules文件夹中找到刚刚下载的live2d模型，将其复制到live2d_models中，然后编辑配置文件中的model.use项，将其修改为live2d_models文件夹中的模型文件夹名称</p>
+</blockquote>
+<blockquote>
+<p>最后运行hexo server,在您的浏览器输入的本地的地址,右下方会出现你想要的可爱的2D模型。</p>
+</blockquote>
+
           
         
       
@@ -517,7 +800,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="胡经邦">
-      <meta itemprop="description" content="php是最好的语言">
+      <meta itemprop="description" content="胡经邦的博客">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -678,7 +961,7 @@
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="胡经邦">
-      <meta itemprop="description" content="php是最好的语言">
+      <meta itemprop="description" content="胡经邦的博客">
       <meta itemprop="image" content="/uploads/avatar.jpg">
     </span>
 
@@ -720,7 +1003,7 @@
                 
               
 
-              <time title="创建时间：2018-11-03 11:30:44 / 修改时间：13:43:51" itemprop="dateCreated datePublished" datetime="2018-11-03T11:30:44+08:00">2018-11-03</time>
+              <time title="创建时间：2018-11-03 11:30:44 / 修改时间：16:43:18" itemprop="dateCreated datePublished" datetime="2018-11-03T11:30:44+08:00">2018-11-03</time>
             
 
             
@@ -862,7 +1145,7 @@
                 alt="胡经邦" />
             
               <p class="site-author-name" itemprop="name">胡经邦</p>
-              <p class="site-description motion-element" itemprop="description">php是最好的语言</p>
+              <p class="site-description motion-element" itemprop="description">胡经邦的博客</p>
           </div>
 
           
@@ -872,7 +1155,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -884,6 +1167,8 @@
                 <div class="site-state-item site-state-categories">
                   <a href="/categories/index.html">
                     
+                    
+                      
                     
                       
                     
@@ -912,7 +1197,11 @@
                     
                       
                     
-                    <span class="site-state-item-count">4</span>
+                      
+                    
+                      
+                    
+                    <span class="site-state-item-count">6</span>
                     <span class="site-state-item-name">标签</span>
                   
                 </div>
@@ -1148,5 +1437,5 @@
   
 
 
-<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/shizuku.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/assets/haruto.model.json"},"display":{"position":"right","width":150,"height":300},"mobile":{"show":true},"log":false});</script></body>
 </html>
